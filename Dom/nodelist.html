@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(34, 184, 184);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ducimus explicabo error quibusdam
+            expedita. Explicabo odit temporibus nihil in, optio rem mollitia atque est aperiam iste pariatur cumque
+            consequuntur blanditiis?
+        </h1>
+
+        <div class="paragrafo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maxime quas, soluta vitae unde labore
+                molestiae tempora error ipsam doloremque quo eius autem fugit omnis veniam? Maxime ab soluta blanditiis.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maxime quas, soluta vitae unde labore
+                molestiae tempora error ipsam doloremque quo eius autem fugit omnis veniam? Maxime ab soluta blanditiis.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maxime quas, soluta vitae unde labore
+                molestiae tempora error ipsam doloremque quo eius autem fugit omnis veniam? Maxime ab soluta blanditiis.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maxime quas, soluta vitae unde labore
+                molestiae tempora error ipsam doloremque quo eius autem fugit omnis veniam? Maxime ab soluta blanditiis.
+            </p>
+
+        </div>
+
+    </section>
+</body>
+
+<script>
+
+const paragrafos = document.querySelector('.paragrafo');
+const ps = paragrafos.querySelectorAll('p')
+
+const estilosBody = getComputedStyle(document.body)
+const backgroundColorBody = estilosBody.backgroundColor
+console.log(backgroundColorBody)
+
+for(let p of ps){
+    p.style.backgroundColor = backgroundColorBody;
+    p.style.color = '#FFFFFF'
+}
+
+</script>
+
+</html>
