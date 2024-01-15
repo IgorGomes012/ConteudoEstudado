@@ -27,3 +27,6 @@ console.log(d1)
 class Smartphone extends DispositivoEletronico{}
 const s1 = new Smartphone('iphone');
 s1.ligar();
+
+
+console.log('aqui',d1)
